@@ -1,4 +1,4 @@
-#include "MyForm6.h"
+#include "CodingLSB.h"
 #include "functions.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
@@ -281,7 +281,7 @@ int coding_of_parts_red_LSB(ap_int<8192> message, int start, int count_of_pieces
 	return help_value;
 }
 
-System::Void Project1::MyForm6::button1_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::CodingLSB::button1_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	OpenFileDialog^ open_dialog = gcnew OpenFileDialog; //создание диалогового окна для выбора файла
 	open_dialog->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
@@ -297,7 +297,7 @@ System::Void Project1::MyForm6::button1_Click(System::Object^ sender, System::Ev
 	return System::Void();
 }
 
-System::Void Project1::MyForm6::button2_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::CodingLSB::button2_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	std::string m_text = msclr::interop::marshal_as<std::string>(textBox1->Text);
 
@@ -323,7 +323,7 @@ System::Void Project1::MyForm6::button2_Click(System::Object^ sender, System::Ev
 	return System::Void();
 }
 
-System::Void Project1::MyForm6::button3_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::CodingLSB::button3_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	SaveFileDialog^ open_dialog = gcnew SaveFileDialog;
 	open_dialog->Filter = "PNG Image|*.png";

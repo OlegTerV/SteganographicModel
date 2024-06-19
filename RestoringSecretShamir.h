@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm5
+	/// Сводка для RestoringSecretShamir
 	/// </summary>
-	public ref class MyForm5 : public System::Windows::Forms::Form
+	public ref class RestoringSecretShamir : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm5(void)
+		RestoringSecretShamir(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm5()
+		~RestoringSecretShamir()
 		{
 			if (components)
 			{
@@ -63,7 +63,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm5::typeid));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RestoringSecretShamir::typeid));
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
@@ -181,7 +181,7 @@ namespace Project1 {
 			this->button1->TabIndex = 22;
 			this->button1->Text = L"Декодировать секрет";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm5::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &RestoringSecretShamir::button1_Click);
 			// 
 			// label1
 			// 
@@ -223,7 +223,7 @@ namespace Project1 {
 			this->label5->TabIndex = 33;
 			this->label5->Text = L"Введите степень многочлена:";
 			// 
-			// MyForm5
+			// RestoringSecretShamir
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -242,7 +242,7 @@ namespace Project1 {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
-			this->Name = L"MyForm5";
+			this->Name = L"RestoringSecretShamir";
 			this->Text = L"Декодируем по схеме Шамира";
 			this->ResumeLayout(false);
 			this->PerformLayout();

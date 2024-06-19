@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm1
+	/// Сводка для Menu
 	/// </summary>
-	public ref class MyForm1 : public System::Windows::Forms::Form
+	public ref class Menu : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm1(void)
+		Menu(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm1()
+		~Menu()
 		{
 			if (components)
 			{
@@ -74,7 +74,7 @@ namespace Project1 {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Закодировать секрет в картинку";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm1::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &Menu::button1_Click);
 			// 
 			// button2
 			// 
@@ -87,7 +87,7 @@ namespace Project1 {
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Раскодировать доли из картинки";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm1::button2_Click);
+			this->button2->Click += gcnew System::EventHandler(this, &Menu::button2_Click);
 			// 
 			// label1
 			// 
@@ -112,7 +112,7 @@ namespace Project1 {
 			this->button3->TabIndex = 4;
 			this->button3->Text = L"Раскодировать секрет используя доли";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm1::button3_Click);
+			this->button3->Click += gcnew System::EventHandler(this, &Menu::button3_Click);
 			// 
 			// comboBox1
 			// 
@@ -125,7 +125,7 @@ namespace Project1 {
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(369, 41);
 			this->comboBox1->TabIndex = 5;
-			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm1::comboBox1_SelectedIndexChanged);
+			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Menu::comboBox1_SelectedIndexChanged);
 			// 
 			// label2
 			// 
@@ -138,7 +138,7 @@ namespace Project1 {
 			this->label2->TabIndex = 6;
 			this->label2->Text = L"Метод";
 			// 
-			// MyForm1
+			// Menu
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -149,7 +149,7 @@ namespace Project1 {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			this->Name = L"MyForm1";
+			this->Name = L"Menu";
 			this->Text = L"Меню";
 			this->ResumeLayout(false);
 			this->PerformLayout();

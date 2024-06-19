@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm2
+	/// Сводка для DecodingParts
 	/// </summary>
-	public ref class MyForm2 : public System::Windows::Forms::Form
+	public ref class DecodingParts : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm2(void)
+		DecodingParts(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm2()
+		~DecodingParts()
 		{
 			if (components)
 			{
@@ -102,7 +102,7 @@ namespace Project1 {
 			this->button1->TabIndex = 7;
 			this->button1->Text = L"Выбрать картинку";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm2::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &DecodingParts::button1_Click);
 			// 
 			// button2
 			// 
@@ -114,7 +114,7 @@ namespace Project1 {
 			this->button2->TabIndex = 8;
 			this->button2->Text = L"Декодировать";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm2::button2_Click);
+			this->button2->Click += gcnew System::EventHandler(this, &DecodingParts::button2_Click);
 			// 
 			// pictureBox1
 			// 
@@ -165,7 +165,7 @@ namespace Project1 {
 			this->panel1->Size = System::Drawing::Size(721, 5);
 			this->panel1->TabIndex = 16;
 			// 
-			// MyForm2
+			// DecodingParts
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -179,7 +179,7 @@ namespace Project1 {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->numericUpDown1);
 			this->Controls->Add(this->label2);
-			this->Name = L"MyForm2";
+			this->Name = L"DecodingParts";
 			this->Text = L"Декодируем доли";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();

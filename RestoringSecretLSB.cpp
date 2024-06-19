@@ -1,4 +1,4 @@
-#include "MyForm7.h"
+#include "RestoringSecretLSB.h"
 #include "functions.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
@@ -67,7 +67,7 @@ std::pair <int, ap_int<8192>> decoding_test_version_LSB(int start, int count_of_
 	return std::pair<int, ap_int<8192>>(start + count_of_pixels + 9, code_message);
 }
 
-System::Void Project1::MyForm7::button1_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::RestoringSecretLSB::button1_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	OpenFileDialog^ open_dialog = gcnew OpenFileDialog; //создание диалогового окна для выбора файла
 	open_dialog->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
@@ -80,7 +80,7 @@ System::Void Project1::MyForm7::button1_Click(System::Object^ sender, System::Ev
 	return System::Void();
 }
 
-System::Void Project1::MyForm7::button2_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::RestoringSecretLSB::button2_Click(System::Object^ sender, System::EventArgs^ e)
 {
 
 	ap_int<8192> secret_value = to_dec_LSB(decoding_test_version_LSB(0, 1, 0).second);

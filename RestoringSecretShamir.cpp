@@ -1,4 +1,4 @@
-#include "MyForm5.h"
+#include "RestoringSecretShamir.h"
 #include "functions.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
@@ -19,7 +19,7 @@
 using namespace System;
 using namespace System::Windows::Forms;
 
-System::Void Project1::MyForm5::button1_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::RestoringSecretShamir::button1_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	std::ofstream out("logs.txt");
 	ap_int<2048> p = converter(msclr::interop::marshal_as<std::string>(textBox1->Text));

@@ -1,4 +1,3 @@
-#include "MyForm.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <vector>

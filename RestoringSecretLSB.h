@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm7
+	/// Сводка для RestoringSecretLSB
 	/// </summary>
-	public ref class MyForm7 : public System::Windows::Forms::Form
+	public ref class RestoringSecretLSB : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm7(void)
+		RestoringSecretLSB(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm7()
+		~RestoringSecretLSB()
 		{
 			if (components)
 			{
@@ -83,7 +83,7 @@ namespace Project1 {
 			this->button2->TabIndex = 11;
 			this->button2->Text = L"Декодировать";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm7::button2_Click);
+			this->button2->Click += gcnew System::EventHandler(this, &RestoringSecretLSB::button2_Click);
 			// 
 			// button1
 			// 
@@ -95,7 +95,7 @@ namespace Project1 {
 			this->button1->TabIndex = 10;
 			this->button1->Text = L"Выбрать картинку";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm7::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &RestoringSecretLSB::button1_Click);
 			// 
 			// label4
 			// 
@@ -117,7 +117,7 @@ namespace Project1 {
 			this->textBox4->Size = System::Drawing::Size(407, 39);
 			this->textBox4->TabIndex = 20;
 			// 
-			// MyForm7
+			// RestoringSecretLSB
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -127,7 +127,7 @@ namespace Project1 {
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			this->Name = L"MyForm7";
+			this->Name = L"RestoringSecretLSB";
 			this->Text = L"Декодируем";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);

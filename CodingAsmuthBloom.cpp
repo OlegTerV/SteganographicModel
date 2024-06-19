@@ -1,4 +1,4 @@
-#include "MyForm.h"
+#include "CodingAsmuthBloom.h"
 #include "functions.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
@@ -282,7 +282,7 @@ int coding_sinature_Asmuth_Bloom(ap_int<2048> message, int start, int count_of_p
 	return help_value;
 }
 
-System::Void Project1::MyForm::button1_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::CodingAsmuthBloom::button1_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	OpenFileDialog^ open_dialog = gcnew OpenFileDialog; //создание диалогового окна для выбора файла
 	open_dialog->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
@@ -298,7 +298,7 @@ System::Void Project1::MyForm::button1_Click(System::Object^ sender, System::Eve
 	return System::Void();
 }
 
-System::Void Project1::MyForm::button2_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::CodingAsmuthBloom::button2_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	srand(time(NULL));
 	textBox2->Text = "В процессе...";
@@ -426,7 +426,7 @@ System::Void Project1::MyForm::button2_Click(System::Object^ sender, System::Eve
 	return System::Void();
 }
 
-System::Void Project1::MyForm::button3_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::CodingAsmuthBloom::button3_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	SaveFileDialog^ open_dialog = gcnew SaveFileDialog;
 	open_dialog->Filter = "PNG Image|*.png";

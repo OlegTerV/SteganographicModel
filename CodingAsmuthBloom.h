@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// Сводка для CodingAsmuthBloom
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
+	public ref class CodingAsmuthBloom : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
+		CodingAsmuthBloom(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm()
+		~CodingAsmuthBloom()
 		{
 			if (components)
 			{
@@ -149,7 +149,7 @@ namespace Project1 {
 			this->button1->TabIndex = 6;
 			this->button1->Text = L"Выбрать картинку";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &CodingAsmuthBloom::button1_Click);
 			// 
 			// button2
 			// 
@@ -161,7 +161,7 @@ namespace Project1 {
 			this->button2->TabIndex = 7;
 			this->button2->Text = L"Закодировать";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			this->button2->Click += gcnew System::EventHandler(this, &CodingAsmuthBloom::button2_Click);
 			// 
 			// pictureBox1
 			// 
@@ -229,7 +229,7 @@ namespace Project1 {
 			this->button3->TabIndex = 13;
 			this->button3->Text = L"Сохранить измененную картинку ";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			this->button3->Click += gcnew System::EventHandler(this, &CodingAsmuthBloom::button3_Click);
 			// 
 			// textBox1
 			// 
@@ -240,7 +240,7 @@ namespace Project1 {
 			this->textBox1->Size = System::Drawing::Size(486, 39);
 			this->textBox1->TabIndex = 0;
 			// 
-			// MyForm
+			// CodingAsmuthBloom
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -259,7 +259,7 @@ namespace Project1 {
 			this->Controls->Add(this->numericUpDown2);
 			this->Controls->Add(this->numericUpDown1);
 			this->Controls->Add(this->textBox1);
-			this->Name = L"MyForm";
+			this->Name = L"CodingAsmuthBloom";
 			this->Text = L"Кодируем по схеме Асмута-Блума";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->EndInit();

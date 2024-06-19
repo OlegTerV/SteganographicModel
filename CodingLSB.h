@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm6
+	/// Сводка для CodingLSB
 	/// </summary>
-	public ref class MyForm6 : public System::Windows::Forms::Form
+	public ref class CodingLSB : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm6(void)
+		CodingLSB(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm6()
+		~CodingLSB()
 		{
 			if (components)
 			{
@@ -97,7 +97,7 @@ namespace Project1 {
 			this->button3->TabIndex = 35;
 			this->button3->Text = L"Сохранить измененную картинку ";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm6::button3_Click);
+			this->button3->Click += gcnew System::EventHandler(this, &CodingLSB::button3_Click);
 			// 
 			// label4
 			// 
@@ -142,7 +142,7 @@ namespace Project1 {
 			this->button2->TabIndex = 31;
 			this->button2->Text = L"Закодировать";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm6::button2_Click);
+			this->button2->Click += gcnew System::EventHandler(this, &CodingLSB::button2_Click);
 			// 
 			// button1
 			// 
@@ -154,7 +154,7 @@ namespace Project1 {
 			this->button1->TabIndex = 30;
 			this->button1->Text = L"Выбрать картинку";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm6::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &CodingLSB::button1_Click);
 			// 
 			// label1
 			// 
@@ -176,7 +176,7 @@ namespace Project1 {
 			this->textBox1->Size = System::Drawing::Size(486, 39);
 			this->textBox1->TabIndex = 28;
 			// 
-			// MyForm6
+			// CodingLSB
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -189,7 +189,7 @@ namespace Project1 {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
-			this->Name = L"MyForm6";
+			this->Name = L"CodingLSB";
 			this->Text = L"Кодируем методом LSB - классика";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);

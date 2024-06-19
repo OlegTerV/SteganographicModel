@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm4
+	/// Сводка для CodingShamir
 	/// </summary>
-	public ref class MyForm4 : public System::Windows::Forms::Form
+	public ref class CodingShamir : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm4(void)
+		CodingShamir(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm4()
+		~CodingShamir()
 		{
 			if (components)
 			{
@@ -127,7 +127,7 @@ namespace Project1 {
 			this->button3->TabIndex = 27;
 			this->button3->Text = L"Сохранить измененную картинку ";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm4::button3_Click);
+			this->button3->Click += gcnew System::EventHandler(this, &CodingShamir::button3_Click);
 			// 
 			// textBox3
 			// 
@@ -194,7 +194,7 @@ namespace Project1 {
 			this->button2->TabIndex = 21;
 			this->button2->Text = L"Закодировать";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm4::button2_Click);
+			this->button2->Click += gcnew System::EventHandler(this, &CodingShamir::button2_Click);
 			// 
 			// button1
 			// 
@@ -206,7 +206,7 @@ namespace Project1 {
 			this->button1->TabIndex = 20;
 			this->button1->Text = L"Выбрать картинку";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm4::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &CodingShamir::button1_Click);
 			// 
 			// label3
 			// 
@@ -291,7 +291,7 @@ namespace Project1 {
 			this->label6->TabIndex = 28;
 			this->label6->Text = L"Степень многочлена (запомните !): ";
 			// 
-			// MyForm4
+			// CodingShamir
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -312,7 +312,7 @@ namespace Project1 {
 			this->Controls->Add(this->numericUpDown2);
 			this->Controls->Add(this->numericUpDown1);
 			this->Controls->Add(this->textBox1);
-			this->Name = L"MyForm4";
+			this->Name = L"CodingShamir";
 			this->Text = L"Кодируем по схеме Шамира";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->EndInit();

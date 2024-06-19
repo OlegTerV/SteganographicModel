@@ -10,12 +10,12 @@ namespace Project1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm3
+	/// Сводка для RestoringSecretAsmuthBloom
 	/// </summary>
-	public ref class MyForm3 : public System::Windows::Forms::Form
+	public ref class RestoringSecretAsmuthBloom : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm3(void)
+		RestoringSecretAsmuthBloom(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~MyForm3()
+		~RestoringSecretAsmuthBloom()
 		{
 			if (components)
 			{
@@ -61,7 +61,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm3::typeid));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RestoringSecretAsmuthBloom::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
@@ -106,7 +106,7 @@ namespace Project1 {
 			this->button1->TabIndex = 8;
 			this->button1->Text = L"Декодировать секрет";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm3::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &RestoringSecretAsmuthBloom::button1_Click);
 			// 
 			// textBox2
 			// 
@@ -199,7 +199,7 @@ namespace Project1 {
 			this->label4->TabIndex = 19;
 			this->label4->Text = L"Раскодированный секрет:";
 			// 
-			// MyForm3
+			// RestoringSecretAsmuthBloom
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -216,7 +216,7 @@ namespace Project1 {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
-			this->Name = L"MyForm3";
+			this->Name = L"RestoringSecretAsmuthBloom";
 			this->Text = L"Декодируем по схеме Асмута-Блума";
 			this->ResumeLayout(false);
 			this->PerformLayout();

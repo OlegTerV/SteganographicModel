@@ -1,4 +1,4 @@
-﻿#include "MyForm2.h"
+﻿#include "DecodingParts.h"
 #include "functions.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
@@ -102,7 +102,7 @@ int decoding_signature(int start, int count_of_pieces, int number_of_part) {
 	return i;
 }
 
-System::Void Project1::MyForm2::button1_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::DecodingParts::button1_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	OpenFileDialog^ open_dialog = gcnew OpenFileDialog; //создание диалогового окна для выбора файла
 	open_dialog->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
@@ -115,7 +115,7 @@ System::Void Project1::MyForm2::button1_Click(System::Object^ sender, System::Ev
 	return System::Void();
 }
 
-System::Void Project1::MyForm2::button2_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void Project1::DecodingParts::button2_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	int n = Convert::ToInt32(numericUpDown1->Value);
 
